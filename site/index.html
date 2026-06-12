@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOL Team Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Basic Development and Operation · Lab 12</p>
+          <h1>LOL</h1>
+          <p class="lede">
+            We are a two-person team building a containerized team profile site
+            and deploying it together with the open-source Vikunja Todo
+            application on one machine through Docker Compose.
+          </p>
+          <div class="hero-meta">
+            <span>Member 1: 张函睿 (Daniel) · 20232098</span>
+            <span>Member 2: 梁汝涛 (Albert) · 20242225</span>
+            <span>Website: localhost:8080</span>
+            <span>Todo App: localhost:3456</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="panel">
+          <p class="section-label">Team Introduction</p>
+          <h2>Who we are</h2>
+          <p>
+            LOL is a small project team focused on presenting our work clearly
+            while showing practical deployment skills. In this Lab 12 project, we
+            package a static website, connect an open-source Todo application,
+            and launch everything together through one Docker Compose workflow.
+          </p>
+        </section>
+
+        <section class="member-grid">
+          <article class="member-card">
+            <img
+              src="./assets/daniel-zhang.jpg"
+              alt="Photo of Zhang Hanrui Daniel"
+              class="member-photo"
+            />
+            <div class="member-copy">
+              <p class="section-label">Profile</p>
+              <h2>张函睿 (Daniel)</h2>
+              <p>
+                Daniel is mainly responsible for the deployment setup, Docker
+                Compose workflow, and final project structure used in this lab
+                submission.
+              </p>
+            </div>
+          </article>
+
+          <article class="member-card">
+            <img
+              src="./assets/liang-rutao.jpg"
+              alt="Photo of Liang Rutao"
+              class="member-photo"
+            />
+            <div class="member-copy">
+              <p class="section-label">Profile</p>
+              <h2>梁汝涛 (Albert)</h2>
+              <p>
+                Albert supports the website content, presentation details, and
+                the final demo materials shown in the public repository and the
+                recorded submission.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="grid">
+          <article class="panel">
+            <p class="section-label">Highlights</p>
+            <h2>What this project demonstrates</h2>
+            <ul>
+              <li>Static website containerized with Nginx.</li>
+              <li>One-command startup with Docker Compose.</li>
+              <li>Open-source Todo application integration with Vikunja.</li>
+            </ul>
+          </article>
+
+          <article class="panel accent">
+            <p class="section-label">Deployment</p>
+            <h2>Single-machine stack</h2>
+            <p>
+              The team portfolio container and Vikunja stack run together on the
+              same machine. This matches the Lab 12 requirement to deploy both
+              applications in the same deployment step.
+            </p>
+          </article>
+        </section>
+
+        <section class="panel roadmap">
+          <p class="section-label">Checklist</p>
+          <h2>Before final submission</h2>
+          <ol>
+            <li>Confirm the GitHub repository is public.</li>
+            <li>Show both applications working in the screen recording.</li>
+            <li>Include the repository URL and video link in the assignment.</li>
+            <li>Add contribution percentages if the teacher requests them.</li>
+          </ol>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

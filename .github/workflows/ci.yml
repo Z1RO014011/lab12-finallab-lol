@@ -1,0 +1,26 @@
+name: Validate Lab 12 Project
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Make validation script executable
+        run: chmod +x tests/check_lab12.sh
+
+      - name: Run project structure checks
+        run: ./tests/check_lab12.sh
+
+      - name: Validate docker compose file
+        run: docker compose config
+
+      - name: Build personal website image
+        run: docker build -t lab12-portfolio ./site
+
