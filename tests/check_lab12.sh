@@ -108,6 +108,7 @@ require_contains "site/main.js" "prefers-reduced-motion: reduce"
 require_contains "site/main.js" "is-visible"
 require_contains "site/main.js" "hero-ready"
 
+require_contains "site/Dockerfile" "COPY main.js /usr/share/nginx/html/main.js"
 require_contains ".github/workflows/ci.yml" "docker compose config"
 require_contains ".github/workflows/ci.yml" "docker build"
 
