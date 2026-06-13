@@ -4,109 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOL Team Portfolio</title>
+    <meta
+      name="description"
+      content="Apple-inspired cinematic homepage for the LOL team Lab 12 final project."
+    />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="hero">
+    <main class="site-shell">
+      <section class="hero" data-section="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Basic Development and Operation · Lab 12</p>
-          <h1>LOL</h1>
-          <p class="lede">
-            We are a two-person team building a containerized team profile site
-            and deploying it together with the open-source Vikunja Todo
-            application on one machine through Docker Compose.
+          <p class="eyebrow">Apple-inspired cinematic homepage</p>
+          <h1 class="hero-title" data-animate="hero-title">LOL</h1>
+          <p class="hero-statement" data-animate="hero-copy">
+            Faces first. Story next.
           </p>
-          <div class="hero-meta">
-            <span>Member 1: 张函睿 (Daniel) · 20232098</span>
-            <span>Member 2: 梁汝涛 (Albert) · 20242225</span>
-            <span>Website: localhost:8080</span>
-            <span>Todo App: localhost:3456</span>
-          </div>
+          <p class="hero-lede" data-animate="hero-copy">
+            We built a static team profile site and deployed it with the
+            open-source Vikunja Todo application on the same machine through
+            one Docker Compose flow.
+          </p>
         </div>
-      </header>
 
-      <main>
-        <section class="panel">
-          <p class="section-label">Team Introduction</p>
-          <h2>Who we are</h2>
-          <p>
-            LOL is a small project team focused on presenting our work clearly
-            while showing practical deployment skills. In this Lab 12 project, we
-            package a static website, connect an open-source Todo application,
-            and launch everything together through one Docker Compose workflow.
-          </p>
-        </section>
-
-        <section class="member-grid">
-          <article class="member-card">
+        <div class="hero-portraits" data-animate="hero-visual">
+          <figure class="portrait portrait-daniel">
             <img
               src="./assets/daniel-zhang.jpg"
               alt="Photo of Zhang Hanrui Daniel"
-              class="member-photo"
             />
-            <div class="member-copy">
-              <p class="section-label">Profile</p>
-              <h2>张函睿 (Daniel)</h2>
+            <figcaption>张函睿 (Daniel) · 20232098</figcaption>
+          </figure>
+
+          <figure class="portrait portrait-albert">
+            <img
+              src="./assets/liang-rutao.jpg"
+              alt="Photo of Liang Rutao Albert"
+            />
+            <figcaption>梁汝涛 (Albert) · 20242225</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section
+        class="project-statement reveal"
+        data-section="project-statement"
+        data-reveal
+      >
+        <p class="section-label">Project Statement</p>
+        <h2>Two members. Two apps. One deployment flow.</h2>
+        <p>
+          This Lab 12 submission combines a static team profile site and the
+          Vikunja Todo app in one local stack, launched together on the same
+          machine.
+        </p>
+      </section>
+
+      <section class="team-showcase" data-section="team-showcase">
+        <div class="team-showcase-intro reveal" data-reveal>
+          <p class="section-label">Team Showcase</p>
+          <h2>Two people, one polished deployment story.</h2>
+        </div>
+
+        <div class="team-stage">
+          <article class="member-spotlight reveal" data-reveal>
+            <div class="member-visual">
+              <img
+                src="./assets/daniel-zhang.jpg"
+                alt="Photo of Zhang Hanrui Daniel"
+              />
+            </div>
+            <div class="member-details">
+              <p class="member-label">Member 1</p>
+              <h3>张函睿 <span>(Daniel / Zhang Hanrui)</span></h3>
+              <p class="member-id">Student ID: 20232098</p>
               <p>
-                Daniel is mainly responsible for the deployment setup, Docker
-                Compose workflow, and final project structure used in this lab
+                Daniel leads the deployment setup, container integration, and
+                the final static team profile site structure used in this
                 submission.
               </p>
             </div>
           </article>
 
-          <article class="member-card">
-            <img
-              src="./assets/liang-rutao.jpg"
-              alt="Photo of Liang Rutao"
-              class="member-photo"
-            />
-            <div class="member-copy">
-              <p class="section-label">Profile</p>
-              <h2>梁汝涛 (Albert)</h2>
+          <article class="member-spotlight reveal" data-reveal>
+            <div class="member-visual">
+              <img
+                src="./assets/liang-rutao.jpg"
+                alt="Photo of Liang Rutao Albert"
+              />
+            </div>
+            <div class="member-details">
+              <p class="member-label">Member 2</p>
+              <h3>梁汝涛 <span>(Albert / Liang Rutao)</span></h3>
+              <p class="member-id">Student ID: 20242225</p>
               <p>
-                Albert supports the website content, presentation details, and
-                the final demo materials shown in the public repository and the
-                recorded submission.
+                Albert supports the website content, team presentation details,
+                and the final public demo materials prepared for submission.
               </p>
             </div>
           </article>
-        </section>
+        </div>
+      </section>
 
-        <section class="grid">
-          <article class="panel">
-            <p class="section-label">Highlights</p>
-            <h2>What this project demonstrates</h2>
-            <ul>
-              <li>Static website containerized with Nginx.</li>
-              <li>One-command startup with Docker Compose.</li>
-              <li>Open-source Todo application integration with Vikunja.</li>
-            </ul>
+      <section
+        class="project-highlights reveal"
+        data-section="project-highlights"
+        data-reveal
+      >
+        <p class="section-label">Project Highlights</p>
+        <h2>Built to satisfy the lab and still feel premium.</h2>
+
+        <div class="highlight-grid">
+          <article class="highlight-card">
+            <h3>Static team profile site</h3>
+            <p>Served by Nginx from the same repo.</p>
           </article>
 
-          <article class="panel accent">
-            <p class="section-label">Deployment</p>
-            <h2>Single-machine stack</h2>
-            <p>
-              The team portfolio container and Vikunja stack run together on the
-              same machine. This matches the Lab 12 requirement to deploy both
-              applications in the same deployment step.
-            </p>
+          <article class="highlight-card">
+            <h3>Vikunja Todo app</h3>
+            <p>Integrated as the open-source productivity application.</p>
           </article>
-        </section>
 
-        <section class="panel roadmap">
-          <p class="section-label">Checklist</p>
-          <h2>Before final submission</h2>
-          <ol>
-            <li>Confirm the GitHub repository is public.</li>
-            <li>Show both applications working in the screen recording.</li>
-            <li>Include the repository URL and video link in the assignment.</li>
-            <li>Add contribution percentages if the teacher requests them.</li>
-          </ol>
-        </section>
-      </main>
-    </div>
+          <article class="highlight-card">
+            <h3>Docker Compose</h3>
+            <p>One command starts the full stack on the same machine.</p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="access-footer reveal"
+        data-section="access-footer"
+        data-reveal
+      >
+        <p class="section-label">Access</p>
+        <h2>Ready for review.</h2>
+
+        <ul class="access-list">
+          <li>Website: http://localhost:8080</li>
+          <li>Todo App: http://localhost:3456</li>
+          <li>Repository: public GitHub submission for Lab 12</li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
