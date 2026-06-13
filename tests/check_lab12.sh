@@ -103,6 +103,11 @@ require_contains "site/styles.css" "@media (prefers-reduced-motion: reduce)"
 require_contains "site/styles.css" "position: sticky"
 require_not_contains "site/styles.css" "Iowan Old Style"
 
+require_contains "site/main.js" "IntersectionObserver"
+require_contains "site/main.js" "prefers-reduced-motion: reduce"
+require_contains "site/main.js" "is-visible"
+require_contains "site/main.js" "hero-ready"
+
 require_contains ".github/workflows/ci.yml" "docker compose config"
 require_contains ".github/workflows/ci.yml" "docker build"
 
