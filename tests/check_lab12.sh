@@ -22,7 +22,7 @@ require_contains() {
   file=$1
   pattern=$2
 
-  if ! grep -q "$pattern" "$ROOT_DIR/$file"; then
+  if ! grep -q -- "$pattern" "$ROOT_DIR/$file"; then
     echo "Expected pattern '$pattern' in $file" >&2
     exit 1
   fi
@@ -32,7 +32,7 @@ require_not_contains() {
   file=$1
   pattern=$2
 
-  if grep -q "$pattern" "$ROOT_DIR/$file"; then
+  if grep -q -- "$pattern" "$ROOT_DIR/$file"; then
     echo "Unexpected pattern '$pattern' in $file" >&2
     exit 1
   fi
@@ -95,6 +95,13 @@ require_not_contains "site/index.html" "Basic Development and Operation · Lab 1
 require_contains "site/index.html" "static team profile site"
 require_contains "site/index.html" "Docker Compose"
 require_contains "site/index.html" "same machine"
+
+require_contains "site/styles.css" "--bg-dark"
+require_contains "site/styles.css" ".hero-title"
+require_contains "site/styles.css" ".team-showcase"
+require_contains "site/styles.css" "@media (prefers-reduced-motion: reduce)"
+require_contains "site/styles.css" "position: sticky"
+require_not_contains "site/styles.css" "Iowan Old Style"
 
 require_contains ".github/workflows/ci.yml" "docker compose config"
 require_contains ".github/workflows/ci.yml" "docker build"
