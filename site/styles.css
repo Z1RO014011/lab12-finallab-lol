@@ -65,6 +65,7 @@ img {
 }
 
 .hero,
+.team-transition,
 .project-statement,
 .team-showcase-intro,
 .project-highlights,
@@ -74,16 +75,17 @@ img {
 }
 
 .hero {
-  min-height: 100svh;
-  padding: 48px 0 42px;
+  min-height: clamp(720px, 84svh, 880px);
+  padding: 34px 0 28px;
   display: grid;
   grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  align-items: end;
+  align-items: center;
   gap: 28px;
 }
 
 .hero-copy {
-  padding: 24px 0 8px;
+  align-self: center;
+  padding: 0 0 8px;
 }
 
 .eyebrow,
@@ -137,6 +139,7 @@ img {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
   align-items: end;
+  align-self: end;
 }
 
 .portrait {
@@ -184,6 +187,55 @@ img {
   color: var(--text-dark);
   box-shadow: var(--shadow-card);
   backdrop-filter: blur(18px);
+}
+
+.team-transition {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.transition-visual,
+.transition-copy {
+  border: 1px solid var(--line-light);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--text-dark);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(18px);
+}
+
+.transition-visual {
+  min-height: 420px;
+}
+
+.transition-visual img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.transition-copy {
+  padding: 40px;
+}
+
+.transition-copy h2 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 4.1rem);
+  font-weight: 650;
+  letter-spacing: -0.06em;
+  line-height: 0.96;
+  color: var(--text-dark);
+  text-wrap: balance;
+}
+
+.transition-copy p:last-child {
+  max-width: 32ch;
+  margin: 18px 0 0;
+  color: var(--text-muted-dark);
 }
 
 .project-statement {
@@ -375,7 +427,12 @@ button {
   .hero {
     grid-template-columns: 1fr;
     gap: 24px;
-    padding-top: 36px;
+    min-height: auto;
+    padding-top: 30px;
+  }
+
+  .team-transition {
+    grid-template-columns: 1fr;
   }
 
   .hero-copy {
@@ -397,6 +454,7 @@ button {
 
 @media (max-width: 860px) {
   .hero,
+  .team-transition,
   .project-statement,
   .team-showcase-intro,
   .project-highlights,

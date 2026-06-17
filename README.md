@@ -11,10 +11,13 @@ This repository contains our Lab 12 final submission: a team profile website and
 - Member 2: 梁汝涛 (Albert)
 - Student ID 2: `20242225`
 - photo 2: `site/assets/liang-rutao.jpg`
+- Team logo: `site/assets/team-transition-glow.png`
 
 ## Team Overview
 
 LOL is a two-person team focused on combining clear presentation with practical deployment work. In this project, we package a static website, connect the open-source Vikunja Todo app, and launch both services through a single Docker Compose workflow.
+
+The current homepage uses an Apple-inspired cinematic layout with oversized typography, motion-based section reveals, a dedicated team logo transition section, and a two-member showcase designed for the final Lab 12 presentation.
 
 ## Application URLs
 
@@ -24,6 +27,7 @@ LOL is a two-person team focused on combining clear presentation with practical 
 ## Project Structure
 
 - `site/`: static team website served by Nginx
+- `site/assets/team-transition-glow.png`: the LOL team logo used in the logo transition section
 - `docker-compose.yml`: starts the website, Vikunja, and PostgreSQL together
 - `.github/workflows/ci.yml`: builds the website image and validates the compose file
 - `files/`: local storage for Vikunja uploads
