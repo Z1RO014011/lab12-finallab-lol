@@ -29,8 +29,8 @@ The current homepage uses an Apple-inspired cinematic layout with oversized typo
 ## Demo Video
 
 - Preferred video page after enabling GitHub Pages: [https://z1ro014011.github.io/lab12-finallab-lol/](https://z1ro014011.github.io/lab12-finallab-lol/)
-- Direct GitHub file page: [https://github.com/Z1RO014011/lab12-finallab-lol/blob/main/docs/lab12-cut-1080p-hevc.mp4](https://github.com/Z1RO014011/lab12-finallab-lol/blob/main/docs/lab12-cut-1080p-hevc.mp4)
-- Repository video file: [docs/lab12-cut-1080p-hevc.mp4](docs/lab12-cut-1080p-hevc.mp4)
+- Direct GitHub file page: [https://github.com/Z1RO014011/lab12-finallab-lol/blob/main/docs/lab12-final-project-demo.mp4](https://github.com/Z1RO014011/lab12-finallab-lol/blob/main/docs/lab12-final-project-demo.mp4)
+- Repository video file: [docs/lab12-final-project-demo.mp4](docs/lab12-final-project-demo.mp4)
 
 ## Project Structure
 
@@ -55,7 +55,7 @@ The current homepage uses an Apple-inspired cinematic layout with oversized typo
 - Running Todo application on the same machine
 - `.mp4` screen recording of the full workflow
 - Final repository URL and video submission for the assignment
-- Public demo video file in `docs/lab12-cut-1080p-hevc.mp4`
+- Public demo video file in `docs/lab12-final-project-demo.mp4`
 
 ## Notes
 
