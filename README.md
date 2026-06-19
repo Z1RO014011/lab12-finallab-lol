@@ -28,9 +28,8 @@ The current homepage uses an Apple-inspired cinematic layout with oversized typo
 
 ## Demo Video
 
-- Preferred video page after enabling GitHub Pages: [https://z1ro014011.github.io/lab12-finallab-lol/](https://z1ro014011.github.io/lab12-finallab-lol/)
-- Direct GitHub file page: [https://github.com/Z1RO014011/lab12-finallab-lol/blob/main/docs/lab12-final-project-demo.mp4](https://github.com/Z1RO014011/lab12-finallab-lol/blob/main/docs/lab12-final-project-demo.mp4)
-- Repository video file: [docs/lab12-final-project-demo.mp4](docs/lab12-final-project-demo.mp4)
+- Primary video URL: [https://cdn.jsdelivr.net/gh/Z1RO014011/lab12-finallab-lol@main/docs/lab12-final-project-demo.mp4](https://cdn.jsdelivr.net/gh/Z1RO014011/lab12-finallab-lol@main/docs/lab12-final-project-demo.mp4)
+- Repository video file: `docs/lab12-final-project-demo.mp4`
 
 ## Project Structure
 
