@@ -8,9 +8,11 @@ This repository contains our Lab 12 final submission: a team profile website and
 - Member 1: 张函睿 (Daniel)
 - Student ID 1: `20232098`
 - photo 1: `site/assets/daniel-zhang.jpg`
+- Contribution 1: `50%`
 - Member 2: 梁汝涛 (Albert)
 - Student ID 2: `20242225`
 - photo 2: `site/assets/liang-rutao.jpg`
+- Contribution 2: `50%`
 - Team logo: `site/assets/team-transition-glow.png`
 
 ## Team Overview
@@ -23,6 +25,11 @@ The current homepage uses an Apple-inspired cinematic layout with oversized typo
 
 - Personal Website: [http://localhost:8080](http://localhost:8080)
 - Todo App (Vikunja): [http://localhost:3456](http://localhost:3456)
+
+## Demo Video
+
+- Direct video URL: [Watch the Lab 12 demo video](https://raw.githubusercontent.com/Z1RO014011/lab12-finallab-lol/main/docs/lab12-cut-1080p-hevc.mp4)
+- Repository video file: [docs/lab12-cut-1080p-hevc.mp4](docs/lab12-cut-1080p-hevc.mp4)
 
 ## Project Structure
 
@@ -47,9 +54,10 @@ The current homepage uses an Apple-inspired cinematic layout with oversized typo
 - Running Todo application on the same machine
 - `.mp4` screen recording of the full workflow
 - Final repository URL and video submission for the assignment
+- Public demo video file in `docs/lab12-cut-1080p-hevc.mp4`
 
 ## Notes
 
 - This project uses [Vikunja](https://vikunja.io/) as the required open-source Todo application.
 - On macOS with Docker Desktop, the `files/` bind mount usually works without running `chown 1000`.
-- If the teacher requires contribution percentages, they can be added to this README before final submission.
+- The team contribution split is currently recorded as `50% / 50%`.
