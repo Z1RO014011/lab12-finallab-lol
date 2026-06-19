@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 12 Demo Video</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0a0c10;
+        --panel: rgba(255, 255, 255, 0.06);
+        --panel-strong: rgba(255, 255, 255, 0.1);
+        --text: #f5f5f7;
+        --muted: rgba(245, 245, 247, 0.7);
+        --accent: #8db8ff;
+        --line: rgba(255, 255, 255, 0.12);
+        --shadow: 0 30px 80px rgba(0, 0, 0, 0.34);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family:
+          "SF Pro Display",
+          "SF Pro Text",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Helvetica Neue",
+          Arial,
+          sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top, rgba(141, 184, 255, 0.16), transparent 26%),
+          linear-gradient(180deg, #050608 0%, #0a0c10 40%, #121621 100%);
+      }
+
+      main {
+        width: min(1100px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 64px;
+      }
+
+      .hero {
+        margin-bottom: 28px;
+      }
+
+      .eyebrow {
+        margin: 0 0 16px;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(3rem, 8vw, 5.6rem);
+        line-height: 0.92;
+        letter-spacing: -0.06em;
+      }
+
+      .lede {
+        max-width: 38rem;
+        margin: 18px 0 0;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: var(--muted);
+      }
+
+      .player-shell {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(18px);
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        border-radius: 18px;
+        background: #000;
+      }
+
+      .meta {
+        margin-top: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .chip {
+        padding: 10px 14px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--panel-strong);
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      .chip:hover {
+        border-color: rgba(141, 184, 255, 0.45);
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Lab 12 Final Project</p>
+        <h1>Demo Video</h1>
+        <p class="lede">
+          This page hosts the final screen recording for the LOL team submission.
+          If playback does not start automatically, use the controls below or open
+          the repository link.
+        </p>
+      </section>
+
+      <section class="player-shell">
+        <video controls preload="metadata">
+          <source src="./lab12-cut-1080p-hevc.mp4" type="video/mp4">
+          Your browser does not support HTML5 video playback.
+        </video>
+
+        <div class="meta">
+          <a class="chip" href="https://github.com/Z1RO014011/lab12-finallab-lol">GitHub Repository</a>
+          <a class="chip" href="./lab12-cut-1080p-hevc.mp4">Open Video File</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
